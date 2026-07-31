@@ -1,0 +1,52 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h1>PULI.</h1>
+
+    <ul>
+        <li>Story</li>
+        <li>Product</li>
+        <li>Recipes</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p>ORGANIC KUDAMPULI</p>
+
+        <h2>
+            PULI<br>
+            IS<br>
+            BACK.
+        </h2>
+
+        <p>
+            The smoky soul of Kerala fish curry.
+        </p>
+
+        <button>Discover</button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+Add homepage
+
+</html>
