@@ -1,51 +1,272 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PULI</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #111;
+    color: white;
+    overflow-x: hidden;
+}
 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Navigation */
 
-<body>
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 35px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
 
-    <!-- Navigation -->
-    <nav>
-        <h1>PULI.</h1>
 
-        <ul>
-            <li>Story</li>
-            <li>Product</li>
-            <li>Recipes</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+nav h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    letter-spacing: -2px;
+}
 
-    <!-- First Screen -->
-    <section class="landing">
-        <img src="images/background.png" alt="Kudampuli">
 
-        <div class="scroll">
-            ↓ Scroll
-        </div>
-    </section>
+nav ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
 
-    <!-- Second Screen -->
-    <section class="hero">
 
-        <div class="hero-image">
-            <img src="images/feel-the-taste.png" alt="Feel the Taste">
-        </div>
+nav li {
+    font-size: 15px;
+    cursor: pointer;
+}
 
-    </section>
 
-</body>
 
-</html>
+/* TOP IMAGE SECTION */
+
+.landing {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.landing img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* keeps your original image unchanged */
+}
+
+
+
+.scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+
+/* SECOND SECTION */
+
+.hero {
+
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #ffb703,
+        #fb8500,
+        #e63946
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* FLOATING IMAGE */
+
+.hero-image {
+
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.hero-image img {
+
+    width: 500px;
+    max-width: 80vw;
+
+    animation: float 5s ease-in-out infinite;
+
+    filter: drop-shadow(
+        0px 30px 40px rgba(0,0,0,0.35)
+    );
+
+}
+
+
+
+/* floating motion */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+
+/* TEXT */
+
+.hero-text {
+
+    position: absolute;
+
+    right: 8%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 3;
+
+}
+
+
+
+.hero-text p:first-child {
+
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+
+
+.hero-text h2 {
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 90px;
+
+    line-height: .85;
+
+    margin: 20px 0;
+
+}
+
+
+
+.hero-text p {
+
+    max-width: 300px;
+
+    font-size: 18px;
+
+}
+
+
+
+button {
+
+    margin-top: 30px;
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #111;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    nav {
+        padding:25px;
+    }
+
+
+    nav ul {
+        display:none;
+    }
+
+
+    .hero {
+
+        flex-direction:column;
+
+    }
+
+
+    .hero-image img {
+
+        width:350px;
+
+    }
+
+
+    .hero-text {
+
+        position:relative;
+
+        right:auto;
+        top:auto;
+
+        transform:none;
+
+        text-align:center;
+
+        margin-top:30px;
+
+    }
+
+
+    .hero-text h2 {
+
+        font-size:60px;
+
+    }
+
+}
