@@ -125,3 +125,46 @@ button:hover{
     transform:scale(1.05);
 }
 Add website styling
+/* ---------- Landing Section ---------- */
+
+.landing{
+    height:100vh;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.landing img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.scroll{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:2px;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translate(-50%,0);
+    }
+
+    50%{
+        transform:translate(-50%,-12px);
+    }
+
+}
+Make landing image fullscreen
+
+
+
