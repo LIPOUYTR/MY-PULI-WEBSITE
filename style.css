@@ -1,129 +1,51 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body{
-    font-family:'Plus Jakarta Sans',sans-serif;
-    background:linear-gradient(135deg,#FFB703,#FB8500,#E63946);
-    color:white;
-    min-height:100vh;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULI</title>
 
-.hero-text h2{
-    font-family:'Space Grotesk',sans-serif;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:30px 8%;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
-nav h1{
-    font-size:2rem;
-    font-weight:900;
-    letter-spacing:2px;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
+<body>
 
-nav li{
-    cursor:pointer;
-    transition:.3s;
-}
+    <!-- Navigation -->
+    <nav>
+        <h1>PULI.</h1>
 
-nav li:hover{
-    transform:translateY(-2px);
-}
+        <ul>
+            <li>Story</li>
+            <li>Product</li>
+            <li>Recipes</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 
-.landing{
-    height:100vh;
-    width:100%;
-    overflow:hidden;
-    position:relative;
-}
+    <!-- First Screen -->
+    <section class="landing">
+        <img src="images/background.png" alt="Kudampuli">
 
-.landing img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
+        <div class="scroll">
+            ↓ Scroll
+        </div>
+    </section>
 
-.scroll{
-    position:absolute;
-    bottom:40px;
-    left:50%;
-    transform:translateX(-50%);
-    color:white;
-    font-size:22px;
-    font-weight:bold;
-    animation:bounce 2s infinite;
-}
+    <!-- Second Screen -->
+    <section class="hero">
 
-@keyframes bounce{
-    0%,100%{
-        transform:translate(-50%,0);
-    }
+        <div class="hero-image">
+            <img src="images/feel-the-taste.png" alt="Feel the Taste">
+        </div>
 
-    50%{
-        transform:translate(-50%,-12px);
-    }
-}
+    </section>
 
-.hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:0 8%;
-}
+</body>
 
-.hero-text{
-    max-width:700px;
-}
-
-.hero-text p:first-child{
-    text-transform:uppercase;
-    letter-spacing:4px;
-    margin-bottom:15px;
-}
-
-.hero-text h2{
-    font-size:6rem;
-    line-height:.9;
-    font-weight:900;
-    margin-bottom:25px;
-}
-
-.hero-text p:last-of-type{
-    font-size:1.3rem;
-    max-width:500px;
-    margin:0 auto 35px;
-}
-
-button{
-    border:none;
-    background:white;
-    color:#E63946;
-    padding:18px 40px;
-    border-radius:40px;
-    font-size:1rem;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
-
-button:hover{
-    transform:scale(1.05);
-}
-Clean up website styling
-
+</html>
