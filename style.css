@@ -6,12 +6,13 @@
 
 body{
     font-family:'Plus Jakarta Sans',sans-serif;
-    .hero-text h2{
-    font-family:'Space Grotesk',sans-serif;
-}
     background:linear-gradient(135deg,#FFB703,#FB8500,#E63946);
     color:white;
     min-height:100vh;
+}
+
+.hero-text h2{
+    font-family:'Space Grotesk',sans-serif;
 }
 
 nav{
@@ -42,91 +43,6 @@ nav li:hover{
     transform:translateY(-2px);
 }
 
-.hero{
-    min-height:85vh;
-    display:flex;
-    align-items:center;
-    padding:0 8%;
-}
-
-.hero-text p:first-child{
-    text-transform:uppercase;
-    letter-spacing:4px;
-    margin-bottom:15px;
-}
-
-.hero-text h2{
-    font-size:6rem;
-    line-height:.9;
-    font-weight:900;
-    margin-bottom:25px;
-}
-
-.hero-text p:last-of-type{
-    font-size:1.3rem;
-    max-width:500px;
-    margin-bottom:35px;
-}
-
-button{
-    border:none;
-    background:white;
-    color:#E63946;
-    padding:18px 40px;
-    border-radius:40px;
-    font-size:1rem;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:60px;
-    min-height:85vh;
-    padding:0 8%;
-}
-
-.hero-text{
-    flex:1;
-}
-
-.hero-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.hero-image img{
-    width:480px;
-    max-width:100%;
-    animation:float 4s ease-in-out infinite;
-    filter:drop-shadow(0 35px 45px rgba(0,0,0,.35));
-}
-
-@keyframes float{
-
-    0%{
-        transform:translateY(0px) rotate(-2deg);
-    }
-
-    50%{
-        transform:translateY(-18px) rotate(2deg);
-    }
-
-    100%{
-        transform:translateY(0px) rotate(-2deg);
-    }
-
-}
-
-button:hover{
-    transform:scale(1.05);
-}
-Add website styling
-/* ---------- Landing Section ---------- */
-
 .landing{
     height:100vh;
     width:100%;
@@ -149,12 +65,10 @@ Add website styling
     color:white;
     font-size:22px;
     font-weight:bold;
-    letter-spacing:2px;
     animation:bounce 2s infinite;
 }
 
 @keyframes bounce{
-
     0%,100%{
         transform:translate(-50%,0);
     }
@@ -162,9 +76,54 @@ Add website styling
     50%{
         transform:translate(-50%,-12px);
     }
-
 }
-Make landing image fullscreen
 
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 8%;
+}
 
+.hero-text{
+    max-width:700px;
+}
+
+.hero-text p:first-child{
+    text-transform:uppercase;
+    letter-spacing:4px;
+    margin-bottom:15px;
+}
+
+.hero-text h2{
+    font-size:6rem;
+    line-height:.9;
+    font-weight:900;
+    margin-bottom:25px;
+}
+
+.hero-text p:last-of-type{
+    font-size:1.3rem;
+    max-width:500px;
+    margin:0 auto 35px;
+}
+
+button{
+    border:none;
+    background:white;
+    color:#E63946;
+    padding:18px 40px;
+    border-radius:40px;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+Clean up website styling
 
