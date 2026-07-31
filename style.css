@@ -79,6 +79,47 @@ button{
     cursor:pointer;
     transition:.3s;
 }
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    min-height:85vh;
+    padding:0 8%;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:480px;
+    max-width:100%;
+    animation:float 4s ease-in-out infinite;
+    filter:drop-shadow(0 35px 45px rgba(0,0,0,.35));
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px) rotate(-2deg);
+    }
+
+    50%{
+        transform:translateY(-18px) rotate(2deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(-2deg);
+    }
+
+}
 
 button:hover{
     transform:scale(1.05);
