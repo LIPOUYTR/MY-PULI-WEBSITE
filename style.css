@@ -41,9 +41,9 @@ nav h1{
     font-weight:700;
 
     position:relative;
-    top:-15px;      /* Move higher */
+    left:-20px;    /* Move left */
+    top:-8px;      /* Optional: keep it slightly higher */
 }
-
 
 
 nav ul{
