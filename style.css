@@ -24,24 +24,12 @@ body{
 /* NAVIGATION */
 
 nav{
-
     position:absolute;
-
     top:0;
     left:0;
-
     width:100%;
 
-    padding:35px 70px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    z-index:10;
-
+    padding:20px 70px;   /* was 35px 70px */
 }
 
 
