@@ -28,23 +28,26 @@ nav{
     top:0;
     left:0;
     width:100%;
+    padding:25px 50px;
 
-    padding:20px 70px;   /* was 35px 70px */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:1000;
 }
-
-
 
 nav h1{
     font-family:'Space Grotesk',sans-serif;
     font-size:42px;
-    color:#FFC300;
     font-weight:700;
 
-    position:relative;
-    left:-20px;    /* Move left */
-    top:-8px;      /* Optional: keep it slightly higher */
-}
+    color:#FFC300;
 
+    position:relative;
+    left:0;
+    top:0;
+}
 
 nav ul{
 
