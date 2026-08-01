@@ -38,15 +38,16 @@ nav{
 }
 
 nav h1{
-    font-family:'Space Grotesk',sans-serif;
-    font-size:42px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size:36px;      /* Smaller than 42px */
     font-weight:700;
-
     color:#FFC300;
 
     position:relative;
-    left:0;
-    top:0;
+    left:-12px;          /* Move slightly left */
+    top:-2px;            /* Optional: slightly higher */
+
+    margin:0;
 }
 
 nav ul{
