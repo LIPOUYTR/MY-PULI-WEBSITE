@@ -47,11 +47,10 @@ nav{
 
 
 nav h1{
-
     font-family:'Space Grotesk',sans-serif;
-
     font-size:42px;
-
+    color:#FFB703;   /* Golden yellow */
+    font-weight:700;
 }
 
 
