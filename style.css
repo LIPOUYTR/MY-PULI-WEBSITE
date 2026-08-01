@@ -39,7 +39,7 @@ nav{
 
 nav h1{
     font-family:'Space Grotesk', sans-serif;
-    font-size:36px;      /* Smaller than 42px */
+    font-size:30px;      /* Smaller than 42px */
     font-weight:700;
     color:#FFC300;
 
@@ -90,15 +90,11 @@ nav li{
 
 
 .landing img{
-
-
     width:100%;
-
     height:100%;
-
-    object-fit:cover;
-
-
+    object-fit:contain;
+    object-position:center;
+    background:#000;
 }
 
 
@@ -396,3 +392,57 @@ button{
 
 
 }
+@media (max-width:768px){
+
+    nav{
+        padding:20px;
+    }
+
+    nav ul{
+        display:none;
+    }
+
+    nav h1{
+        font-size:28px;
+        left:0;
+        top:0;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        min-height:100vh;
+        padding:80px 20px;
+    }
+
+    .hero-image{
+        position:relative;
+        left:auto;
+        top:auto;
+        transform:none;
+    }
+
+    .hero-image img{
+        width:280px;
+        max-width:90%;
+    }
+
+    .hero-text{
+        position:relative;
+        right:auto;
+        top:auto;
+        transform:none;
+        margin-top:30px;
+    }
+
+    .hero-text h2{
+        font-size:50px;
+    }
+}
+
+
+
+
+
+
+
