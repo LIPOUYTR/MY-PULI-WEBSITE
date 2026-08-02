@@ -1283,55 +1283,7 @@ nav ul li a:hover{
 
 }
 
-/* RECIPES */
 
-.recipe-grid{
-
-    margin-top:60px;
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:35px;
-
-}
-
-.recipe-card{
-
-    background:white;
-
-    border-radius:25px;
-
-    padding:35px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-}
-
-.recipe-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.recipe-card h3{
-
-    color:#FB8500;
-
-    margin-bottom:15px;
-
-    font-family:'Space Grotesk',sans-serif;
-
-}
-
-.recipe-card p{
-
-    font-size:17px;
-
-}
 
 /* CONTACT */
 
