@@ -162,61 +162,96 @@ nav ul li a:hover{
 /* ==========================
    STORY SECTION
 ========================== */
+/* MOBILE STORY SECTION */
 
 .hero{
 
-    min-height:100vh;
-
+    min-height:auto;
+    padding:100px 25px 60px;
     background:linear-gradient(
-    135deg,
-    #FFB703,
-    #FB8500,
-    #E63946
+        135deg,
+        #FFB703,
+        #FB8500,
+        #E63946
     );
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:120px 8%;
 
 }
 
 .hero-container{
 
-    width:100%;
-    max-width:1400px;
-
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
     align-items:center;
-
-    gap:70px;
+    justify-content:center;
+    gap:35px;
 
 }
 
-/* Floating Image */
+/* TEXT FIRST */
+
+.hero-text{
+
+    order:1;
+    width:100%;
+    max-width:500px;
+    text-align:center;
+
+}
+
+.small-title{
+
+    font-size:13px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+
+}
+
+.hero-text h2{
+
+    font-size:38px;
+    line-height:1.1;
+    margin-bottom:20px;
+
+}
+
+.description{
+
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:25px;
+
+}
+
+.discover-btn{
+
+    display:inline-block;
+    padding:14px 32px;
+    font-size:15px;
+
+}
+
+/* IMAGE BELOW THE TEXT */
 
 .hero-image{
 
-    flex:1;
+    order:2;
+    width:100%;
     display:flex;
     justify-content:center;
+    align-items:center;
 
 }
 
 .hero-image img{
 
-    width:520px;
-    max-width:100%;
-
-    filter:drop-shadow(
-    0 30px 45px rgba(0,0,0,.35));
-
-    animation:float 5s ease-in-out infinite;
+    width:240px;
+    max-width:85%;
+    height:auto;
+    animation:none;
+    filter:none;
+    margin-top:10px;
 
 }
-
 @keyframes float{
 
     0%{
