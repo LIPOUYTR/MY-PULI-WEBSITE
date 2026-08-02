@@ -506,19 +506,25 @@ nav ul li a:hover{
 
 /* RECIPES */
 
+/* RECIPES */
+
 .recipe-grid{
 
     margin-top:60px;
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:repeat(3,1fr);
+    flex-direction:column;
 
     gap:35px;
 
 }
 
 .recipe-card{
+
+    width:100%;
+    max-width:800px;
+    margin:auto;
 
     background:white;
 
