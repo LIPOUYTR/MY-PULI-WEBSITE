@@ -345,7 +345,9 @@ nav ul li a:hover{
     justify-content:center;
     align-items:center;
 
-    transform:translateY(80px);
+    transform:translate(40px,90px);
+
+}
 
 }
 
