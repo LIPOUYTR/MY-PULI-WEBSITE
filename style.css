@@ -506,8 +506,6 @@ nav ul li a:hover{
 
 /* RECIPES */
 
-/* RECIPES */
-
 .recipe-grid{
 
     margin-top:60px;
@@ -520,11 +518,12 @@ nav ul li a:hover{
 
 }
 
+
 .recipe-card{
 
-    width:100%;
-    max-width:800px;
-    margin:auto;
+    display:block;
+    text-decoration:none;
+    color:#222;
 
     background:white;
 
@@ -535,28 +534,6 @@ nav ul li a:hover{
     box-shadow:0 15px 35px rgba(0,0,0,.08);
 
     transition:.3s;
-
-}
-
-.recipe-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.recipe-card h3{
-
-    color:#FB8500;
-
-    margin-bottom:15px;
-
-    font-family:'Space Grotesk',sans-serif;
-
-}
-
-.recipe-card p{
-
-    font-size:17px;
 
 }
 
