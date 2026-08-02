@@ -342,8 +342,8 @@ nav ul li a:hover{
 .hero-image{
 
     display:flex;
-    justify-content:right;
-    align-items:right;
+    justify-content:center;
+    align-items:center;
 
     transform:translate(100px,400px);
 
