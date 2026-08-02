@@ -1690,13 +1690,13 @@ LARGE DESKTOP
 
 }
 /* ==========================
-   RECIPES STACKED VERTICALLY
+   FORCE RECIPES VERTICAL
 ========================== */
 
 .recipe-grid{
 
-    display:flex;
-    flex-direction:column;
+    display:flex !important;
+    flex-direction:column !important;
     gap:35px;
 
 }
@@ -1706,49 +1706,9 @@ LARGE DESKTOP
 
     width:100%;
     max-width:800px;
-    margin:auto;
-
-    padding:35px;
-
-    border-radius:25px;
-    background:white;
-    color:#222;
+    margin:0 auto;
 
 }
-/* END */
-
-
-
-
-
-
-
-/* ==========================
-LARGE DESKTOP
-========================== */
-
-@media (min-width:1600px){
-
-.hero-container{
-
-    max-width:1600px;
-
-}
-
-.hero-text h2{
-
-    font-size:100px;
-
-}
-
-.hero-image img{
-
-    width:620px;
-
-}
-
-}
-
 /* END */
 
 
