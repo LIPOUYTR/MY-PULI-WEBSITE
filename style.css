@@ -567,133 +567,162 @@ footer{
 /* ==========================
    MOBILE
 ========================== */
-
 @media (max-width:768px){
 
-header{
+    /* Header */
 
-    position:fixed;
+    header{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        background:rgba(0,0,0,.75);
+        backdrop-filter:blur(15px);
+        z-index:1000;
+    }
 
-    background:rgba(0,0,0,.75);
+    nav{
+        padding:18px 25px;
+    }
 
-    backdrop-filter:blur(15px);
+    .logo{
+        font-size:28px;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    nav ul{
+        position:absolute;
+        top:75px;
+        right:20px;
+        width:230px;
+        background:rgba(0,0,0,.92);
+        border-radius:20px;
+        display:none;
+        flex-direction:column;
+        gap:20px;
+        padding:25px;
+        text-align:center;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    /* Hide desktop hero */
+
+    .landing{
+        display:none;
+    }
+
+    /* Story Section */
+
+    .hero{
+        min-height:auto;
+        padding:110px 25px 70px;
+    }
+
+    .hero-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:35px;
+    }
+
+    /* TEXT FIRST */
+
+    .hero-text{
+        order:1;
+        width:100%;
+        text-align:center;
+    }
+
+    .small-title{
+        font-size:13px;
+        letter-spacing:3px;
+        margin-bottom:15px;
+    }
+
+    .hero-text h2{
+        font-size:38px;
+        line-height:1.1;
+        margin-bottom:20px;
+    }
+
+    .description{
+        max-width:100%;
+        font-size:16px;
+        line-height:1.8;
+        margin-bottom:25px;
+    }
+
+    .discover-btn{
+        display:inline-block;
+        width:auto;
+        padding:14px 30px;
+    }
+
+    /* IMAGE BELOW THE TEXT */
+
+    .hero-image{
+        order:2;
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .hero-image img{
+        width:240px;
+        max-width:85%;
+        height:auto;
+        animation:none;
+        margin-top:10px;
+    }
+
+    /* Product */
+
+    .product-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .product-card img{
+        width:240px;
+    }
+
+    /* Recipes */
+
+    .recipe-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* General Sections */
+
+    .content-section{
+        padding:70px 25px;
+        text-align:center;
+    }
+
+    .content-section h2{
+        font-size:34px;
+    }
+
+    .content-section p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    /* Footer */
+
+    .footer-content ul{
+        flex-direction:column;
+        gap:15px;
+    }
 
 }
-
-nav{
-
-    padding:18px 25px;
-
-}
-
-.logo{
-
-    font-size:28px;
-
-}
-
-.menu-toggle{
-
-    display:flex;
-
-}
-
-nav ul{
-
-    position:absolute;
-
-    top:75px;
-
-    right:20px;
-
-    width:230px;
-
-    background:rgba(0,0,0,.92);
-
-    border-radius:20px;
-
-    display:none;
-
-    flex-direction:column;
-
-    gap:25px;
-
-    padding:25px;
-
-    text-align:center;
-
-}
-
-nav ul.active{
-
-    display:flex;
-
-}
-
-/* Hide desktop hero */
-
-.landing{
-
-    display:none;
-
-}
-
-/* Story section */
-
-.hero{
-
-    min-height:auto;
-
-    padding:120px 25px 70px;
-
-}
-
-.hero-container{
-
-    flex-direction:column;
-
-    text-align:center;
-
-    gap:40px;
-
-}
-
-.hero-image img{
-
-    width:280px;
-
-}
-
-.hero-text{
-
-    width:100%;
-
-}
-
-.hero-text h2{
-
-    font-size:46px;
-
-    line-height:1;
-
-}
-
-.description{
-
-    max-width:100%;
-
-    font-size:17px;
-
-}
-
-.discover-btn{
-
-    width:100%;
-
-    text-align:center;
-
-}
-
 /* Product */
 
 .product-card{
